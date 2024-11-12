@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(221, 100%, 96%);
+}
+.container{
+    display: flex;
+    gap: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    width: 50%;
+}
+.elem-one{
+    background: linear-gradient( to top,hsl(241, 81%, 54%) ,hsl(252, 100%, 67%));
+    width: 49%;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+.result h3{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+}
+.cercle{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(29% at 50% 50%);
+    background: linear-gradient(hsla(256, 72%, 46%, 1)70%,hsla(241, 72%, 46%, 0)) ;
+    height: 164px;
+}
+.cercle h1{
+    padding-top: 33px;
+    font-size: 60px;
+    color: hsl(0, 0%, 100%);
+}
+.cercle p{
+    text-align: center;
+    padding-bottom: 30px;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+    font-size: 15px;
+}
+.great p{
+    font-size: 18px;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    padding-bottom: 35px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.great h3{
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 25px;
+}
+.elem-two{
+    padding-top: 25px;
+    padding-left: 20px;
+    display: grid;
+    flex-direction: column;
+    gap: 20px;
+}
+.elem-two h3{
+    color: hsl(224, 30%, 27%);
+    font-size: 20px;
+}
+.reaction{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 87, 87 , 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    width: 260px;
+}
+.rea-one{
+    display: flex;
+    gap: 10px;
+}
+.rea-one p{
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+.rea-two {
+    font-weight: 700;
+}
+.rea-two span{
+    color: hsl(242, 26%, 70%);
+}
+.memory{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 176, 31, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    width: 260px;
+}
+.memo-one{
+    display: flex;
+    gap: 10px;
+}
+.memo-one p{
+    color: hsl(39, 100%, 56%);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+.memo-two {
+    font-weight: 700;
+}
+.memo-two span{
+    color: hsl(242, 26%, 70%);
+}
+.verbal{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 189, 145 ,0.2);
+    border-radius: 10px;
+    padding: 10px;
+    width: 260px;
+}
+.ver-one{
+    display: flex;
+    gap: 10px;
+}
+.ver-one p{
+    color: hsl(166, 100%, 37%);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+.ver-two {
+    font-weight: 700;
+}
+.ver-two span{
+    color: hsl(242, 26%, 70%);
+}
+.visual{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(17, 37, 212 , 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    width: 260px;
+}
+.vis-one{
+    display: flex;
+    gap: 10px;
+}
+.vis-one p{
+    color: hsl(234, 85%, 45%);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+.vis-two {
+    font-weight: 700;
+}
+.vis-two span{
+    color: hsl(242, 26%, 70%);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.btn button{
+    padding: 10px 100px 10px 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(221, 100%, 96%);
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn button:hover{
+    background: linear-gradient(to top,hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+}
+@media (max-width: 375px) {
+    
+    .container {
+        width: 100%; 
+        flex-direction: column; 
+        gap: 15px; 
+        
+        
+    }
+    .elem-one{
+        padding-top: 150px;
+    }
+    .elem-one, .elem-two {
+        width: 100%; 
+    }
+    .elem-two{
+        padding-right: 20px;
+    }
+    .cercle {
+        height: 140px; 
+    }
+
+    .cercle h1 {
+        font-size: 50px; 
+    }
+
+    .btn button {
+        padding: 10px 80px; 
+    }
+
+    .reaction, .memory, .verbal, .visual {
+        width: 100%; 
+    }
+}
